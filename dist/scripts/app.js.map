@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"app.js","sourcesContent":["\n(function(){\n\n\tvar app = document.querySelector( '.app' );\n\n\tapp.classList.remove( 'app_no_js' );\n\tapp.classList.add( 'app_js' );\n\n})();\n"]}
