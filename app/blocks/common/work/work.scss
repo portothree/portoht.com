@@ -1,4 +1,5 @@
 .work {
+  margin-bottom: 30px;
   &__about {
     display: flex;
     flex-direction: column;
@@ -9,7 +10,6 @@
   }
 
   &__company {
-    background-color: #000;
-    color: #fff;
+    background-color: #dedede;
   }
 }

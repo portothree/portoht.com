@@ -1,9 +1,9 @@
 .profile {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   width: 500px;
-  height: 160px;
+  height: auto;
   font-size: 30px;
   position: relative;
 
@@ -19,6 +19,7 @@
     border-radius: 50%;
     width: 144px;
     height: 144px;
+    margin: 10px 10px 10px 5px;
   }
 
   &__info {
