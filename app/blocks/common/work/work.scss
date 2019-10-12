@@ -1,0 +1,15 @@
+.work {
+  &__about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__date {
+    line-height: 0;
+  }
+
+  &__company {
+    background-color: #000;
+    color: #fff;
+  }
+}
