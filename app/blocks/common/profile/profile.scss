@@ -2,10 +2,15 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 500px;
+  width: $overall-width;
   height: auto;
   font-size: 30px;
   position: relative;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    flex-direction: column;
+  }
 
   &:hover {
     background-size: cover;
@@ -19,7 +24,7 @@
     border-radius: 50%;
     width: 144px;
     height: 144px;
-    margin: 10px 10px 10px 5px;
+    margin: 20px;
   }
 
   &__info {
@@ -29,7 +34,6 @@
 
   &__title {
     font-size: 24px;
-    line-height: 0;
   }
 
   &__desc {

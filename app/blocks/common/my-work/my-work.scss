@@ -2,8 +2,12 @@
   grid-area: my-work;
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: $overall-width;
   padding: 20px;
   background-color: #fff;
   color: #000;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 }
