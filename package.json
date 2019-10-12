@@ -17,7 +17,8 @@
     "build": "cross-env NODE_ENV=production gulp",
     "add": "node ./core/.add",
     "zip": "gulp zip",
-    "zip:dev": "cross-env SNAPSHOT=true gulp zip"
+    "zip:dev": "cross-env SNAPSHOT=true gulp zip",
+    "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
