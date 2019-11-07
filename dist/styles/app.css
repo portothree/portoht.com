@@ -333,7 +333,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  grid-template-areas: "overall" "my-work"; }
+  grid-template-areas: "overall" "my-projects" "my-work"; }
 
 .screen-reader-only {
   border: 0;
@@ -353,16 +353,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 500px;
   height: 100vh; }
   @media (max-width: 500px) {
     .overall {
@@ -370,11 +368,14 @@ body {
           -ms-flex-pack: start;
               justify-content: flex-start; } }
   .overall__inner {
-    width: 500px;
     padding: 20px; }
     @media (max-width: 500px) {
       .overall__inner {
         width: 100%; } }
+  .overall__scroll {
+    text-align: center; }
+    .overall__scroll span {
+      display: block; }
 
 .profile {
   display: -webkit-box;
@@ -449,6 +450,30 @@ body {
   100% {
     background-image: url("https://images.unsplash.com/photo-1531084641017-5b40e034c17d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"); } }
 
+.my-projects {
+  grid-area: my-projects;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  color: #000; }
+  @media (max-width: 500px) {
+    .my-projects {
+      width: 100%; } }
+
+.project {
+  margin-bottom: 30px; }
+  .project__title {
+    line-height: 0; }
+  .project__desc {
+    color: #484848; }
+
 .my-work {
   grid-area: my-work;
   display: -webkit-box;
@@ -482,4 +507,6 @@ body {
     line-height: 0; }
   .work__company {
     background-color: #dedede; }
+  .work__desc {
+    color: #484848; }
 /*# sourceMappingURL=app.css.map */
