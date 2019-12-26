@@ -1,0 +1,19 @@
+.blog-posts {
+	color: #fffffe;
+
+	&__post {
+	}
+
+	&__title {
+		color: #7f5af0;
+		margin: 0;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	&__description {
+		color: #94a1b2;
+	}
+}
