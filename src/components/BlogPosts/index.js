@@ -15,6 +15,9 @@ const BlogPosts = () => {
 							description
 							date(formatString: "DD MMMM, YYYY")
 						}
+						fields {
+							slug
+						}
 					}
 				}
 			}
@@ -22,21 +25,21 @@ const BlogPosts = () => {
 	`);
 
 	return (
-		<div className="blog-posts">
+		<main className="blog-posts">
 			{data.allMarkdownRemark.edges.map(({ node }) => (
 				<article className="blog-posts__post" key={node.id}>
 					<header>
-						<h3 className="blog-posts__title">
-							<Link to="">{node.frontmatter.title}</Link>
-						</h3>
-						<small className="blog-posts__description">
-							{node.frontmatter.date}
-						</small>
+						<h2 className="blog-posts__title">
+							<Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+						</h2>
+						<small className="blog-posts__date">{node.frontmatter.date}</small>
 					</header>
-					<p>{node.frontmatter.description}</p>
+					<p className="blog-posts__description">
+						{node.frontmatter.description}
+					</p>
 				</article>
 			))}
-		</div>
+		</main>
 	);
 };
 

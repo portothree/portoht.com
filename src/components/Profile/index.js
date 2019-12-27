@@ -1,10 +1,18 @@
 import React from 'react';
 
+import github from '../../images/github.svg';
+import profile from '../../images/profile.jpg';
+
 import './style.scss';
 
 const Profile = () => {
 	return (
-		<div className="profile">
+		<article className="profile">
+			<img
+				className="profile__photo"
+				src={profile}
+				alt="Me trying hard to look serious"
+			/>
 			<div className="profile__about-me">
 				<h1>Gustavo Porto</h1>
 				<p className="profile__description">
@@ -28,13 +36,13 @@ const Profile = () => {
 				>
 					<img
 						className="profile__github-logo"
-						src="img/github.svg"
+						src={github}
 						alt="Github logo"
 					/>
 					Github
 				</a>
 			</div>
-		</div>
+		</article>
 	);
 };
 
