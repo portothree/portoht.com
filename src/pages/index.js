@@ -7,7 +7,7 @@ import './styles.scss';
 
 const IndexPage = props => {
 	return (
-		<section>
+		<>
 			<SEO title="Home" />
 			<header className="main-header">
 				<nav>
@@ -22,10 +22,10 @@ const IndexPage = props => {
 					</ul>
 				</nav>
 			</header>
-			<div className="home" role="main">
+			<main className="home" role="main">
 				<Profile />
-			</div>
-		</section>
+			</main>
+		</>
 	);
 };
 
