@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import SEO from '../components/seo';
 import Profile from '../components/Profile';
@@ -14,9 +13,9 @@ const IndexPage = props => {
 					<ul className="main-header__list">
 						<li>
 							<span>
-								<Link className="main-header__link" to="/blog">
+								<a className="main-header__link" href="/blog">
 									Blog
-								</Link>
+								</a>
 							</span>
 						</li>
 					</ul>

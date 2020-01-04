@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import './style.scss';
 
@@ -14,7 +13,7 @@ export default props => {
 			<main className="blog">
 				<header className="blog__header">
 					<h1 className="blog__site-title">
-						<Link to="/">Gustavo Porto</Link>
+						<a href="/">Gustavo Porto</a>
 					</h1>
 					<p>Personal blog</p>
 				</header>

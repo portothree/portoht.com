@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import './style.scss';
 
@@ -30,7 +30,7 @@ const BlogPosts = () => {
 				<article className="blog-posts__post" key={node.id}>
 					<header>
 						<h2 className="blog-posts__title">
-							<Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+							<a href={node.fields.slug}>{node.frontmatter.title}</a>
 						</h2>
 						<small className="blog-posts__date">{node.frontmatter.date}</small>
 					</header>

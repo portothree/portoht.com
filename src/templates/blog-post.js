@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import './blog-post.scss';
 
@@ -17,7 +17,7 @@ export default props => {
 			/>
 			<header className="blog-header">
 				<span className="blog-header__back">
-					<Link to="/blog">Back to blog posts</Link>
+					<a href="/blog">Back to blog posts</a>
 				</span>
 			</header>
 			<main>
