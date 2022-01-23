@@ -1,22 +1,49 @@
 {
-  "name": "gustavoporto.dev",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/portothree/gustavoporto.dev.git",
-  "author": "Gustavo Porto <portothree@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^9.7.3",
-    "cssnano": "^4.1.10",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "serve": "^11.2.0"
-  },
+  "name": "portoht.com",
+  "private": true,
+  "description": "Personal website/blog",
+  "version": "0.1.0",
+  "author": "Gustavo Porto <gustavoporto@ya.ru>",
   "dependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7"
+    "gatsby": "^4.5.4",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^4.5.2",
+    "gatsby-plugin-offline": "^5.5.2",
+    "gatsby-plugin-react-helmet": "^5.5.0",
+    "gatsby-plugin-sass": "^5.5.0",
+    "gatsby-plugin-sharp": "^4.5.2",
+    "gatsby-source-filesystem": "^4.5.2",
+    "gatsby-transformer-remark": "^5.5.2",
+    "gatsby-transformer-sharp": "^4.5.0",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/portothree/portoht.com"
+  },
+  "bugs": {
+    "url": "https://github.com/portothree/portoht.com/issues"
   }
 }

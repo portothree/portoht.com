@@ -2,10 +2,11 @@
 	display: flex;
 	align-items: center;
 	width: 600px;
+	color: #fffffe;
 
 	&__photo {
 		border-radius: 50%;
-		width: 200px;
+		min-width: 200px;
 		height: 200px;
 		margin: 20px;
 	}

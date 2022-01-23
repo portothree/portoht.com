@@ -1,7 +1,7 @@
-# gustavoporto.dev
-My personal page
+# portoht.com
 
-Push dist to gh-pages branch:
+Pushing dist to gh-pages branch:
+
 ```
-git push origin :gh-pages && git subtree push --prefix dist origin gh-pages
+$ git push origin :gh-pages && git subtree push --prefix dist origin gh-pages
 ```
