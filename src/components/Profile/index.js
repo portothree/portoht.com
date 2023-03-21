@@ -16,17 +16,15 @@ const Profile = () => {
 			<div className="profile__about-me">
 				<h1>Gustavo Porto</h1>
 				<p className="profile__description">
-					I'm a very strong believer that accessibility is the baseline and not
-					a feature, also I'll always strive to write semantic HTML and
-					maintainable CSS.
+					As a software engineer, I prioritize accessibility as the foundation of all products, not just a feature. I'm committed to developing inclusive solutions, from assistive technologies to user-centered design, to ensure software is functional and accessible to all.
 				</p>
 				<a
 					className="profile__email"
-					href="mailto:gustavoporto@ya.ru"
+					href="mailto:gus@p8s.co"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					gustavoporto@ya.ru
+					gus@p8s.co
 				</a>
 				<a
 					className="profile__github"
