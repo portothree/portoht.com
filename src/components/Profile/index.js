@@ -16,8 +16,7 @@ const Profile = () => {
 			<div className="profile__about-me">
 				<h1>Gustavo Porto</h1>
 				<p className="profile__description">
-					I'm a very strong believer that accessibility is the baseline and not
-					a feature for products.
+					As a software engineer, I prioritize accessibility as the foundation of all products, not just a feature. I'm committed to developing inclusive solutions, from assistive technologies to user-centered design, to ensure software is functional and accessible to all. Continuously learning and improving, I push boundaries while making my work equitable for all users.
 				</p>
 				<a
 					className="profile__email"
