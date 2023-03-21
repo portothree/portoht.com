@@ -17,16 +17,15 @@ const Profile = () => {
 				<h1>Gustavo Porto</h1>
 				<p className="profile__description">
 					I'm a very strong believer that accessibility is the baseline and not
-					a feature, also I'll always strive to write semantic HTML and
-					maintainable CSS.
+					a feature for products.
 				</p>
 				<a
 					className="profile__email"
-					href="mailto:gustavoporto@ya.ru"
+					href="mailto:gus@p8s.co"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					gustavoporto@ya.ru
+					gus@p8s.co
 				</a>
 				<a
 					className="profile__github"
