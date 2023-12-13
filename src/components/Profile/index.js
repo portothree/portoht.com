@@ -20,11 +20,11 @@ const Profile = () => {
 				</p>
 				<a
 					className="profile__email"
-					href="mailto:gus@p8s.co"
+					href="mailto:gus@portothr.ee"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					gus@p8s.co
+					gus@portothr.ee
 				</a>
 				<a
 					className="profile__github"
